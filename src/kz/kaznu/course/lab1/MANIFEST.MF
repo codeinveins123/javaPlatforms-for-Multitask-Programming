@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: kz.kaznu.course.lab1.StudentManager
+Created-By: Vasilev Daniil

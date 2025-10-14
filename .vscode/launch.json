@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "ParallelExecutionDemo",
+      "request": "launch",
+      "mainClass": "kz.kaznu.course.lab1.ParallelExecutionDemo",
+      "projectName": "Java_a3776ff6"
+    },
+    {
+      "type": "java",
+      "name": "StudentManager",
+      "request": "launch",
+      "mainClass": "kz.kaznu.course.lab1.StudentManager",
+      "projectName": "Javalab1_2d1437f"
+    },
+    {
+      "type": "java",
+      "name": "HelloJava",
+      "request": "launch",
+      "mainClass": "kz.kaznu.course.lab1.HelloJava",
+      "projectName": "Javalab1_2d1437f"
+    },
+    {
+      "type": "java",
+      "name": "Run HelloJava",
+      "request": "launch",
+      "mainClass": "kz.kaznu.course.lab1.HelloJava",
+      "projectName": "JavaLab1",
+      "args": "arguments test launch.json"
+    }
+  ]
+}

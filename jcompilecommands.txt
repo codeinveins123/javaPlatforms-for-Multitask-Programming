@@ -1,0 +1,12 @@
+javac -d bin -cp src PATH*.java;
+
+#PATH src/kz/kaznu/course/lab/
+
+javac -d bin -cp src src/kz/kaznu/course/lab/*.java
+
+
+java -cp bin package.name 
+
+#package kz.kaznu.course.lab.
+
+java -cp bin kz.kaznu.course.lab.name 
