@@ -1,0 +1,4 @@
+ProductID,ProductName,Quantity,Price,Date
+101,Laptop,5,85000.00,2025-10-01
+102,Mouse,15,2500.00,2025-10-01
+103,Keyboard,10,5000.00,2025-10-02
