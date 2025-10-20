@@ -38,7 +38,7 @@ public class FileProcessor implements Runnable
         try (BufferedReader reader = new BufferedReader(new FileReader(filename)))
         {
             String line;
-            int lineCounter = 1;
+            //int lineCounter = 1;
             boolean skipHeader = false;
             while((line = reader.readLine()) != null)
             {
@@ -62,7 +62,7 @@ public class FileProcessor implements Runnable
                 {
                     break;
                 } */
-                lineCounter++;
+                //lineCounter++;
             }
             completed = true;
         }

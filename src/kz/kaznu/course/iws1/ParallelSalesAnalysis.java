@@ -11,15 +11,20 @@ public class ParallelSalesAnalysis
         
         // TODO: Создайте массив с именами файлов для обработки
         // Например: "sales_branch1.csv", "sales_branch2.csv", "sales_branch3.csv"
-/*             "sales_branch1.csv",
+/*          "sales_branch1.csv",
             "sales_branch2.csv",
-            "sales_branch3.csv", */
+            "sales_branch3.csv",
+            "sales_branch1_big.csv",
+            "sales_branch2_big.csv",
+            "sales_branch3_big.csv" */
         String[] filenames =
         {
             "sales_branch1.csv",
+            "sales_branch2.csv",
+            "sales_branch3.csv",
             "sales_branch1_big.csv",
             "sales_branch2_big.csv",
-            "sales_branch3_big.csv"
+            "sales_branch3_big.csv" 
         };
         
         // TODO: Запустите параллельную обработку
@@ -49,7 +54,8 @@ public class ParallelSalesAnalysis
         
         List<FileProcessor> processors = new ArrayList<>();
         List<Thread> threads = new ArrayList<>();
-/*         for(var file : filenames)
+
+/*      for(var file : filenames)
         {
             FileProcessor processor = new FileProcessor(file);
             processors.add(processor);
