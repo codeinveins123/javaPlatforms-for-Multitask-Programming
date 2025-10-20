@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ParallelSalesAnalysis",
+      "request": "launch",
+      "mainClass": "kz.kaznu.course.iws1.ParallelSalesAnalysis",
+      "projectName": "Java_a3776ff6"
+    },
+    {
+      "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "kz.kaznu.course.iws1.Main",

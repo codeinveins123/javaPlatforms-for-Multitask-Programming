@@ -38,6 +38,7 @@ public class FileProcessor implements Runnable
         try (BufferedReader reader = new BufferedReader(new FileReader(filename)))
         {
             String line;
+            int lineCounter = 1;
             boolean skipHeader = false;
             while((line = reader.readLine()) != null)
             {
@@ -57,17 +58,21 @@ public class FileProcessor implements Runnable
                                                          parts[4]);
                     results.add(record);
                 }
-                else
+/*                 else
                 {
-                    errorMessage = "incorrect data\n";\
-                    System.err.println(errorMessage);
-                }
+                    break;
+                } */
+                lineCounter++;
             }
             completed = true;
         }
         catch(IOException e)
         {
-            e.printStackTrace();
+            errorMessage = "Error file reading: " + e.getMessage();
+        }
+        catch(NumberFormatException e)
+        {
+            errorMessage = "Error file data: " + e.getMessage();
         }
 
         long endTime = System.currentTimeMillis();
