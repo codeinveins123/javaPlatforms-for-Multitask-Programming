@@ -1,6 +1,7 @@
 package kz.kaznu.course.iws1;
 
 import java.util.*;
+import java.io.*;
 
 public class SalesStatistics
 {
@@ -16,13 +17,8 @@ public class SalesStatistics
         this.productQuantities = new HashMap<>();
         this.productRevenues = new HashMap<>();
     }
+
     
-    // TODO: Создайте метод addRecord(SalesRecord record)
-    // Этот метод должен:
-    // 1. Увеличить totalRecords на 1
-    // 2. Добавить к totalRevenue сумму record.getTotalAmount()
-    // 3. Обновить productQuantities (добавить количество к существующему или создать новую запись)
-    // 4. Обновить productRevenues (добавить выручку к существующей или создать новую запись)
     public void addRecord(SalesRecord record)
     {
         totalRecords++;
@@ -50,12 +46,6 @@ public class SalesStatistics
         }
     }
     
-    // TODO: Создайте метод merge(SalesStatistics other)
-    // Этот метод должен объединить текущую статистику с другой
-    // 1. Сложить totalRecords
-    // 2. Сложить totalRevenue
-    // 3. Объединить productQuantities (суммировать значения для одинаковых ключей)
-    // 4. Объединить productRevenues (суммировать значения для одинаковых ключей)
     void merge(SalesStatistics other)
     {
         Map<String, Integer> otherProductQuantities = other.getProductQuantities();
@@ -93,8 +83,7 @@ public class SalesStatistics
             }
         }
     }
-
-
+    
     public void printReport()
     {
         System.out.println("\n=== ОТЧЕТ ПО ПРОДАЖАМ ===");
@@ -102,8 +91,6 @@ public class SalesStatistics
         System.out.printf("Общая выручка: %.2f тг\n", totalRevenue);
         
         System.out.println("\n--- Топ 5 товаров по количеству ---");
-        // TODO: Выведите топ 5 товаров по количеству проданных единиц
-        // Используйте productQuantities
         ArrayList<Map.Entry<String, Integer>>topQuantities = new ArrayList<>();
         for(Map.Entry<String, Integer> entry : productQuantities.entrySet())
         {
@@ -116,8 +103,6 @@ public class SalesStatistics
         }
         
         System.out.println("\n--- Топ 5 товаров по выручке ---");
-        // TODO: Выведите топ 5 товаров по выручке
-        // Используйте productRevenues
         ArrayList<Map.Entry<String, Double>>topRevenues = new ArrayList<>();
         for(Map.Entry<String, Double> entry : productRevenues.entrySet())
         {

@@ -1,5 +1,5 @@
 package kz.kaznu.course.iws1;
-import java.io.File;
+
 import java.util.*;
 
 public class ParallelSalesAnalysis
@@ -19,12 +19,27 @@ public class ParallelSalesAnalysis
             "sales_branch3_big.csv" */
         String[] filenames =
         {
-            "sales_branch1.csv",
-            "sales_branch2.csv",
-            "sales_branch3.csv",
-            "sales_branch1_big.csv",
-            "sales_branch2_big.csv",
-            "sales_branch3_big.csv" 
+            "branches/sales_mixed_branch1.csv",
+            "branches/sales_mixed_branch2.csv",
+            "branches/sales_mixed_branch3.csv",
+            "branches/sales_mixed_branch2.csv",
+            "branches/sales_mixed_branch4.csv",
+            "branches/sales_mixed_branch5.csv",
+            "branches/sales_mixed_branch6.csv",
+            "branches/sales_mixed_branch7.csv",
+            "branches/sales_mixed_branch8.csv",
+            "branches/sales_mixed_branch9.csv",
+            "branches/sales_mixed_branch10.csv",
+            "branches/sales_mixed_branch11.csv",
+            "branches/sales_mixed_branch12.csv",
+            "branches/sales_mixed_branch13.csv",
+            "branches/sales_mixed_branch14.csv",
+            "branches/sales_mixed_branch15.csv",
+            "branches/sales_mixed_branch16.csv",
+            "branches/sales_mixed_branch17.csv",
+            "branches/sales_mixed_branch18.csv",
+            "branches/sales_mixed_branch19.csv",
+            "branches/sales_mixed_branch20.csv",
         };
         
         // TODO: Запустите параллельную обработку
@@ -38,6 +53,11 @@ public class ParallelSalesAnalysis
         System.out.println("Последовательная обработка заняла: " + sequentialTime + " мс");
         double speedup = (double) sequentialTime / parallelTime;
         System.out.printf("Ускорение: %.2fx\n", speedup);
+
+        long sequentialTimeWithoutThread = processSequentialWithoutThread(filenames);
+        System.out.println("Последовательная обработка без потока заняла: "  + sequentialTimeWithoutThread + " мс" );
+        double speedupWithoutThread = (double) sequentialTime / sequentialTimeWithoutThread;
+        System.out.printf("Ускорение: %.2fx\n", speedupWithoutThread);
     }
     
     public static long processParallel(String[] filenames) throws InterruptedException {
@@ -54,16 +74,6 @@ public class ParallelSalesAnalysis
         
         List<FileProcessor> processors = new ArrayList<>();
         List<Thread> threads = new ArrayList<>();
-
-/*      for(var file : filenames)
-        {
-            FileProcessor processor = new FileProcessor(file);
-            processors.add(processor);
-
-            Thread thread = new Thread(processor);
-            threads.add(thread);
-            thread.start();
-        } */
 
         for(var file : filenames)
         {
@@ -102,7 +112,7 @@ public class ParallelSalesAnalysis
         SalesStatistics statistics = new SalesStatistics();
         for(var processor : processors)
         {
-            if(processor.isCompleted())
+            if(processor.isCompleted() && processor.getErrorMessage() == null )
             {
                 for(var record : processor.getResults())
                 {
@@ -116,12 +126,10 @@ public class ParallelSalesAnalysis
         return endTime - startTime;
     }
     
-    // БОНУС: Реализуйте последовательную обработку для сравнения
-    public static long processSequential(String[] filenames) {
+    public static long processSequential(String[] filenames)
+    {
         long startTime = System.currentTimeMillis();
         
-        // TODO: Реализуйте последовательную обработку
-        // Обработайте файлы один за другим без использования потоков
         List<FileProcessor> processors = new ArrayList<>();
         for(var file : filenames)
         {
@@ -143,7 +151,7 @@ public class ParallelSalesAnalysis
         SalesStatistics statistics = new SalesStatistics();
         for(var processor : processors)
         {
-            if(processor.isCompleted())
+            if(processor.isCompleted() && processor.getErrorMessage() == null)
             {
                 for(var record : processor.getResults())
                 {
@@ -154,6 +162,45 @@ public class ParallelSalesAnalysis
         statistics.printReport();
         
         
+        
+        long endTime = System.currentTimeMillis();
+        return endTime - startTime;
+    }
+
+    public static long processSequentialWithoutThread(String[] filenames)
+    {
+        long startTime = System.currentTimeMillis();
+
+        List<FileProcessor> processors = new ArrayList<>();
+        for(var file : filenames)
+        {
+            processors.add(new FileProcessor(file));
+        }
+        for(var processor : processors)
+        {
+            processor.run();
+        }
+
+        for(var processor : processors)
+        {
+            if(processor.getErrorMessage() != null)
+            {
+                System.out.print(processor.getFilename() + " " + processor.getErrorMessage());
+            }
+        }
+
+        SalesStatistics statistics = new SalesStatistics();
+        for(var processor : processors)
+        {
+            if(processor.isCompleted() && processor.getErrorMessage() == null)
+            {
+                for(var record : processor.getResults())
+                {
+                    statistics.addRecord(record);
+                }               
+            }
+        }
+        statistics.printReport();
         
         long endTime = System.currentTimeMillis();
         return endTime - startTime;

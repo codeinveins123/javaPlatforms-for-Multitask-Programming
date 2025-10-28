@@ -1,0 +1,21 @@
+Изначальное состояние:
+Account[number1]: 1000,00 
+Account[number2]: 1000,00 
+Account[number3]: 1000,00 
+Transfer successful
+Transfer successful
+Transfer successful
+Transfer successful
+Transfer successful
+Transfer successful
+Transfer successful
+Transfer successful
+Transfer successful
+Transfer successful
+
+Конечное состояние:
+Account[number1]: 890,00 
+Account[number2]: 1010,00 
+Account[number3]: 1100,00 
+
+Общая сумма: 3000.0 (должно быть 3000.0)

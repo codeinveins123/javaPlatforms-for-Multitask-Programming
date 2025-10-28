@@ -1,0 +1,35 @@
+Producer: добавляю Item-1
+Consumer-1: взял Item-1
+Producer: добавил Item-1, размер очереди: 1
+Producer: добавляю Item-2
+Producer: добавил Item-2, размер очереди: 1
+Consumer-1: взял Item-2
+Producer: добавляю Item-3
+Producer: добавил Item-3, размер очереди: 1
+Producer: добавляю Item-4
+Producer: добавил Item-4, размер очереди: 2
+Consumer-1: взял Item-3
+Producer: добавляю Item-5
+Producer: добавил Item-5, размер очереди: 2
+Consumer-2: взял Item-4
+Producer: добавляю Item-6
+Producer: добавил Item-6, размер очереди: 2
+Consumer-1: взял Item-5
+Producer: добавляю Item-7
+Producer: добавил Item-7, размер очереди: 2
+Consumer-2: взял Item-6
+Producer: добавляю Item-8
+Producer: добавил Item-8, размер очереди: 2
+Consumer-2: взял Item-7
+Consumer-1: взял Item-8
+Producer: добавляю Item-9
+Producer: добавил Item-9, размер очереди: 1
+Producer: добавляю Item-10
+Producer: добавил Item-10, размер очереди: 2
+Consumer-2: взял Item-9
+Consumer-1: завершил работу
+Producer: завершил работу
+Consumer-2: взял Item-10
+Consumer-2: завершил работу
+
+Очередь пустая: true

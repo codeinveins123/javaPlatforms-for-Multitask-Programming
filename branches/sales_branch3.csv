@@ -1,5 +1,6 @@
 ProductID,ProductName,Quantity,Price,Date
 101,Laptop,5,85000.00,2025-10-01
-102,Mouse,15,2500.00,2025-10-01
+102,Mouse,15,2500.00,2025-10-01Ф
 103,Keyboard,10,5000.00,2025-10-02
 104,Headphone,5,15000.00,2025-10-03,
+104,Headphone,5,20000.00,2025-11-03

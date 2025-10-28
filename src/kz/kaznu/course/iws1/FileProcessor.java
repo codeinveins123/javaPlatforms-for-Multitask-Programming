@@ -21,24 +21,25 @@ public class FileProcessor implements Runnable
     @Override
     public void run()
     {
+        readFile();
+    }
+
+    public void readFile()
+    {
+/*         try
+        {
+            Thread.sleep(10000);
+        }
+            catch (InterruptedException e)
+        {
+            e.printStackTrace(); // или Thread.currentThread().interrupt();
+        } */
         System.out.println("[" + Thread.currentThread().getName() + "] Начало обработки: " + filename);
         long startTime = System.currentTimeMillis();
         
-        // TODO: Реализуйте чтение CSV файла
-        // 1. Откройте файл с помощью BufferedReader
-        // 2. Пропустите первую строку (заголовок)
-        // 3. Читайте строки в цикле
-        // 4. Для каждой строки:
-        //    - Разбейте по запятой: String[] parts = line.split(",");
-        //    - Создайте объект SalesRecord из полученных данных
-        //    - Добавьте в список results
-        // 5. Не забудьте обработать исключения и записать ошибку в errorMessage
-        // 6. В конце установите completed = true
-
         try (BufferedReader reader = new BufferedReader(new FileReader(filename)))
         {
             String line;
-            //int lineCounter = 1;
             boolean skipHeader = false;
             while((line = reader.readLine()) != null)
             {
@@ -47,7 +48,6 @@ public class FileProcessor implements Runnable
                     skipHeader = true;
                     continue;
                 }
-                
                 String[] parts = line.split(",");
                 if(parts.length == 5)
                 {
@@ -58,11 +58,6 @@ public class FileProcessor implements Runnable
                                                          parts[4]);
                     results.add(record);
                 }
-/*                 else
-                {
-                    break;
-                } */
-                //lineCounter++;
             }
             completed = true;
         }
@@ -77,7 +72,7 @@ public class FileProcessor implements Runnable
 
         long endTime = System.currentTimeMillis();
         System.out.println("[" + Thread.currentThread().getName() + "] Обработано записей: " + 
-                            results.size() + " за " + (endTime - startTime) + " мс");
+                            results.size() + " за " + (endTime - startTime) + " мс");       
     }
     
     public List<SalesRecord> getResults()
