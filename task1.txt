@@ -1,0 +1,6 @@
+ТОП 5 самых популярных страниц:
+https://example.com/page/19: 65 обращений
+https://example.com/page/1: 59 обращений
+https://example.com/page/17: 58 обращений
+https://example.com/page/7: 55 обращений
+https://example.com/page/16: 54 обращений

@@ -1,0 +1,4 @@
+SynchronizedMap: 766 ms
+ConcurrentHashMap: 288 ms
+ExplicitLock: 571 ms
+Winner: ConcurrentHashMap (в 1.98 раза быстрее ExplicitLock)
