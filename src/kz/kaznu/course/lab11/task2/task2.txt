@@ -1,0 +1,11 @@
+!!!======== Application is loading data  ===========!!!
+Cache is loading
+Data Base is loading
+Config is loading
+API is loading
+!!!====== Application is waiting for data to be loaded  ===========!!!
+Data Base is loaded
+API is loaded
+Config is loaded
+Cache is loaded
+!!!======= Application is ready  ===========!!!

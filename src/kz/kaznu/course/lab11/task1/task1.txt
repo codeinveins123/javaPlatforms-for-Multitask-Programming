@@ -1,0 +1,42 @@
+Person-4 is waiting for the printer
+Person-8 is waiting for the printer
+Person-4 is using the printer
+Person-7 is waiting for the printer
+Person-10 is waiting for the printer
+Person-6 is waiting for the printer
+Person-3 is waiting for the printer
+Person-5 is waiting for the printer
+Person-2 is waiting for the printer
+Person-9 is waiting for the printer
+Person-0 is waiting for the printer
+Person-1 is waiting for the printer
+Person-11 is waiting for the printer
+Person-12 is waiting for the printer
+Person-13 is waiting for the printer
+Person-8 is using the printer
+Person-7 is using the printer
+Person-4 finished using the printer
+Person-8 finished using the printer
+Person-7 finished using the printer
+Person-5 is using the printer
+Person-10 is using the printer
+Person-2 is using the printer
+Person-10 finished using the printer
+Person-2 finished using the printer
+Person-3 is using the printer
+Person-6 is using the printer
+Person-5 finished using the printer
+Person-9 is using the printer
+Person-3 finished using the printer
+Person-0 is using the printer
+Person-6 finished using the printer
+Person-9 finished using the printer
+Person-1 is using the printer
+Person-11 is using the printer
+Person-0 finished using the printer
+Person-12 is using the printer
+Person-1 finished using the printer
+Person-13 is using the printer
+Person-11 finished using the printer
+Person-12 finished using the printer
+Person-13 finished using the printer
