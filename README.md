@@ -10,6 +10,7 @@
 ## Документация
 - [Отчёт по лабораторной работе #10 (reportLab10.md)](reportLab10.md)
 - [Отчёт по лабораторной работе #11 (reportLab11.md)](reportLab11.md)
+- [Отчёт по лабораторной работе #12 (reportLab12.md)](reportLab12.md)
 
 ## Требования
 - Java 8+ (наличие `javac` и `java` в PATH)
