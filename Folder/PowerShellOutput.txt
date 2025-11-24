@@ -1,0 +1,604 @@
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder1" -Name "Folder1.$_" -ErrorAction SilentlyContinue
+>> }
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder1" -Name "Folder1.$_" -ErrorAction SilentlyContinue
+>> }
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder2" -Name "Folder2
+>> .$_" -ErrorAction SilentlyContinue
+>> 2^C
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder2" -Name "Folder2.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:27                Folder2.1
+d-----        18.11.2025     10:27                Folder2.2
+d-----        18.11.2025     10:27                Folder2.3
+d-----        18.11.2025     10:27                Folder2.4
+d-----        18.11.2025     10:27                Folder2.5
+d-----        18.11.2025     10:27                Folder2.6
+d-----        18.11.2025     10:27                Folder2.7
+d-----        18.11.2025     10:27                Folder2.8
+d-----        18.11.2025     10:27                Folder2.9
+d-----        18.11.2025     10:27                Folder2.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder3" -Name "Folder3.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder3
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:27                Folder3.1
+d-----        18.11.2025     10:27                Folder3.2
+d-----        18.11.2025     10:27                Folder3.3
+d-----        18.11.2025     10:27                Folder3.4
+d-----        18.11.2025     10:27                Folder3.5
+d-----        18.11.2025     10:27                Folder3.6
+d-----        18.11.2025     10:27                Folder3.7
+d-----        18.11.2025     10:27                Folder3.8
+d-----        18.11.2025     10:27                Folder3.9
+d-----        18.11.2025     10:27                Folder3.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder4" -Name "Folder4.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder4
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:27                Folder4.1
+d-----        18.11.2025     10:27                Folder4.2
+d-----        18.11.2025     10:27                Folder4.3
+d-----        18.11.2025     10:27                Folder4.4
+d-----        18.11.2025     10:27                Folder4.5
+d-----        18.11.2025     10:27                Folder4.6
+d-----        18.11.2025     10:27                Folder4.7
+d-----        18.11.2025     10:27                Folder4.8
+d-----        18.11.2025     10:27                Folder4.9
+d-----        18.11.2025     10:27                Folder4.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder5" -Name "Folder5.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder5
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:27                Folder5.1
+d-----        18.11.2025     10:27                Folder5.2
+d-----        18.11.2025     10:27                Folder5.3
+d-----        18.11.2025     10:27                Folder5.4
+d-----        18.11.2025     10:27                Folder5.5
+d-----        18.11.2025     10:27                Folder5.6
+d-----        18.11.2025     10:27                Folder5.7
+d-----        18.11.2025     10:27                Folder5.8
+d-----        18.11.2025     10:27                Folder5.9
+d-----        18.11.2025     10:27                Folder5.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder6" -Name "Folder6.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder6
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:27                Folder6.1
+d-----        18.11.2025     10:27                Folder6.2
+d-----        18.11.2025     10:27                Folder6.3
+d-----        18.11.2025     10:27                Folder6.4
+d-----        18.11.2025     10:27                Folder6.5
+d-----        18.11.2025     10:27                Folder6.6
+d-----        18.11.2025     10:27                Folder6.7
+d-----        18.11.2025     10:27                Folder6.8
+d-----        18.11.2025     10:27                Folder6.9
+d-----        18.11.2025     10:27                Folder6.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder7" -Name "Folder7.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder7
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:28                Folder7.1
+d-----        18.11.2025     10:28                Folder7.2
+d-----        18.11.2025     10:28                Folder7.3
+d-----        18.11.2025     10:28                Folder7.4
+d-----        18.11.2025     10:28                Folder7.5
+d-----        18.11.2025     10:28                Folder7.6
+d-----        18.11.2025     10:28                Folder7.7
+d-----        18.11.2025     10:28                Folder7.8
+d-----        18.11.2025     10:28                Folder7.9
+d-----        18.11.2025     10:28                Folder7.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder8" -Name "Folder8.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder8
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:28                Folder8.1
+d-----        18.11.2025     10:28                Folder8.2
+d-----        18.11.2025     10:28                Folder8.3
+d-----        18.11.2025     10:28                Folder8.4
+d-----        18.11.2025     10:28                Folder8.5
+d-----        18.11.2025     10:28                Folder8.6
+d-----        18.11.2025     10:28                Folder8.7
+d-----        18.11.2025     10:28                Folder8.8
+d-----        18.11.2025     10:28                Folder8.9
+d-----        18.11.2025     10:28                Folder8.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder9" -Name "Folder9.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder9
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:28                Folder9.1
+d-----        18.11.2025     10:28                Folder9.2
+d-----        18.11.2025     10:28                Folder9.3
+d-----        18.11.2025     10:28                Folder9.4
+d-----        18.11.2025     10:28                Folder9.5
+d-----        18.11.2025     10:28                Folder9.6
+d-----        18.11.2025     10:28                Folder9.7
+d-----        18.11.2025     10:28                Folder9.8
+d-----        18.11.2025     10:28                Folder9.9
+d-----        18.11.2025     10:28                Folder9.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder10" -Name "Folder10.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder10
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:28                Folder10.1
+d-----        18.11.2025     10:28                Folder10.2
+d-----        18.11.2025     10:28                Folder10.3
+d-----        18.11.2025     10:28                Folder10.4
+d-----        18.11.2025     10:28                Folder10.5
+d-----        18.11.2025     10:28                Folder10.6
+d-----        18.11.2025     10:28                Folder10.7
+d-----        18.11.2025     10:28                Folder10.8
+d-----        18.11.2025     10:28                Folder10.9
+d-----        18.11.2025     10:28                Folder10.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder11" -Name "Folder11.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder11
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:28                Folder11.1
+d-----        18.11.2025     10:28                Folder11.2
+d-----        18.11.2025     10:28                Folder11.3
+d-----        18.11.2025     10:28                Folder11.4
+d-----        18.11.2025     10:28                Folder11.5
+d-----        18.11.2025     10:28                Folder11.6
+d-----        18.11.2025     10:28                Folder11.7
+d-----        18.11.2025     10:28                Folder11.8
+d-----        18.11.2025     10:28                Folder11.9
+d-----        18.11.2025     10:28                Folder11.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder12" -Name "Folder12.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder12
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:28                Folder12.1
+d-----        18.11.2025     10:28                Folder12.2
+d-----        18.11.2025     10:28                Folder12.3
+d-----        18.11.2025     10:28                Folder12.4
+d-----        18.11.2025     10:28                Folder12.5
+d-----        18.11.2025     10:28                Folder12.6
+d-----        18.11.2025     10:28                Folder12.7
+d-----        18.11.2025     10:28                Folder12.8
+d-----        18.11.2025     10:28                Folder12.9
+d-----        18.11.2025     10:28                Folder12.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder13" -Name "Folder13.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder13
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:28                Folder13.1
+d-----        18.11.2025     10:28                Folder13.2
+d-----        18.11.2025     10:28                Folder13.3
+d-----        18.11.2025     10:28                Folder13.4
+d-----        18.11.2025     10:28                Folder13.5
+d-----        18.11.2025     10:28                Folder13.6
+d-----        18.11.2025     10:28                Folder13.7
+d-----        18.11.2025     10:28                Folder13.8
+d-----        18.11.2025     10:28                Folder13.9
+d-----        18.11.2025     10:28                Folder13.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder14" -Name "Folder14.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder14
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:28                Folder14.1
+d-----        18.11.2025     10:28                Folder14.2
+d-----        18.11.2025     10:28                Folder14.3
+d-----        18.11.2025     10:28                Folder14.4
+d-----        18.11.2025     10:28                Folder14.5
+d-----        18.11.2025     10:28                Folder14.6
+d-----        18.11.2025     10:28                Folder14.7
+d-----        18.11.2025     10:28                Folder14.8
+d-----        18.11.2025     10:28                Folder14.9
+d-----        18.11.2025     10:28                Folder14.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder15" -Name "Folder15.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder15
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:28                Folder15.1
+d-----        18.11.2025     10:28                Folder15.2
+d-----        18.11.2025     10:28                Folder15.3
+d-----        18.11.2025     10:28                Folder15.4
+d-----        18.11.2025     10:28                Folder15.5
+d-----        18.11.2025     10:28                Folder15.6
+d-----        18.11.2025     10:28                Folder15.7
+d-----        18.11.2025     10:28                Folder15.8
+d-----        18.11.2025     10:28                Folder15.9
+d-----        18.11.2025     10:28                Folder15.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder16" -Name "Folder16.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder16
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:29                Folder16.1
+d-----        18.11.2025     10:29                Folder16.2
+d-----        18.11.2025     10:29                Folder16.3
+d-----        18.11.2025     10:29                Folder16.4
+d-----        18.11.2025     10:29                Folder16.5
+d-----        18.11.2025     10:29                Folder16.6
+d-----        18.11.2025     10:29                Folder16.7
+d-----        18.11.2025     10:29                Folder16.8
+d-----        18.11.2025     10:29                Folder16.9
+d-----        18.11.2025     10:29                Folder16.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder17" -Name "Folder17.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder17
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:29                Folder17.1
+d-----        18.11.2025     10:29                Folder17.2
+d-----        18.11.2025     10:29                Folder17.3
+d-----        18.11.2025     10:29                Folder17.4
+d-----        18.11.2025     10:29                Folder17.5
+d-----        18.11.2025     10:29                Folder17.6
+d-----        18.11.2025     10:29                Folder17.7
+d-----        18.11.2025     10:29                Folder17.8
+d-----        18.11.2025     10:29                Folder17.9
+d-----        18.11.2025     10:29                Folder17.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder18" -Name "Folder18.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder18
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:29                Folder18.1
+d-----        18.11.2025     10:29                Folder18.2
+d-----        18.11.2025     10:29                Folder18.3
+d-----        18.11.2025     10:29                Folder18.4
+d-----        18.11.2025     10:29                Folder18.5
+d-----        18.11.2025     10:29                Folder18.6
+d-----        18.11.2025     10:29                Folder18.7
+d-----        18.11.2025     10:29                Folder18.8
+d-----        18.11.2025     10:29                Folder18.9
+d-----        18.11.2025     10:29                Folder18.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder19" -Name "Folder19.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder19
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:29                Folder19.1
+d-----        18.11.2025     10:29                Folder19.2
+d-----        18.11.2025     10:29                Folder19.3
+d-----        18.11.2025     10:29                Folder19.4
+d-----        18.11.2025     10:29                Folder19.5
+d-----        18.11.2025     10:29                Folder19.6
+d-----        18.11.2025     10:29                Folder19.7
+d-----        18.11.2025     10:29                Folder19.8
+d-----        18.11.2025     10:29                Folder19.9
+d-----        18.11.2025     10:29                Folder19.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> 1..20 | ForEach-Object {
+>>     New-Item -ItemType Directory -Name "Folder$_" -ErrorAction SilentlyContinue
+>> }
+>>
+>> # Создаём Folder1.1-Folder1.10 внутри Folder1, тоже без ошибок
+>> 1..10 | ForEach-Object {
+>>     New-Item -ItemType Directory -Path "Folder20" -Name "Folder20.$_" -ErrorAction SilentlyContinue
+>> }
+
+
+    Каталог: C:\Users\codeinveins\Desktop\Java\Folder\Folder20
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18.11.2025     10:29                Folder20.1
+d-----        18.11.2025     10:29                Folder20.2
+d-----        18.11.2025     10:29                Folder20.3
+d-----        18.11.2025     10:29                Folder20.4
+d-----        18.11.2025     10:29                Folder20.5
+d-----        18.11.2025     10:29                Folder20.6
+d-----        18.11.2025     10:29                Folder20.7
+d-----        18.11.2025     10:29                Folder20.8
+d-----        18.11.2025     10:29                Folder20.9
+d-----        18.11.2025     10:29                Folder20.10
+
+
+PS C:\Users\codeinveins\Desktop\Java\Folder> # Путь к корневой папке
+>> $base = "C:\Users\codeinveins\Desktop\Java\Folder"
+>>
+>> # Создаём список всех подпапок (Folder1.1 ... Folder20.10)
+>> $subfolders = Get-ChildItem -Path $base -Recurse -Directory | Where-Object { $_.Name -match "Folder\d+\.\d+" }
+>>
+>> # Перемешиваем подпапки случайным образом
+>> $randomFolders = Get-Random -InputObject $subfolders -Count 50
+>>
+>> # Создаём 50 файлов и раскидываем их по подпапкам
+>> for ($i = 1; $i -le 50; $i++) {
+>>     $targetFolder = $randomFolders[$i - 1].FullName
+>>     $filePath = Join-Path $targetFolder ("file{0}.txt" -f $i)
+>>     "Это содержимое файла №$i" | Out-File -FilePath $filePath -Encoding UTF8
+>>     Write-Host "Создан $filePath"
+>> }
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder5\Folder5.4\file1.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder10\Folder10.1\file2.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder19\Folder19.4\file3.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder14\Folder14.6\file4.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder1\Folder1.10\file5.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder7\Folder7.5\file6.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder18\Folder18.6\file7.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder4\Folder4.9\file8.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder20\Folder20.4\file9.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder8\Folder8.8\file10.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder5\Folder5.1\file11.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder4\Folder4.7\file12.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder16\Folder16.7\file13.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder5\Folder5.8\file14.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder19\Folder19.8\file15.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder14\Folder14.9\file16.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder18\Folder18.5\file17.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder20\Folder20.6\file18.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder19\Folder19.3\file19.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder15\Folder15.2\file20.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder13\Folder13.3\file21.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder19\Folder19.9\file22.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder16\Folder16.10\file23.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder12\Folder12.2\file24.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder10\Folder10.2\file25.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder7\Folder7.3\file26.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder15\Folder15.8\file27.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder20\Folder20.3\file28.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder3\Folder3.4\file29.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder7\Folder7.4\file30.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder5\Folder5.3\file31.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder8\Folder8.2\file32.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder15\Folder15.7\file33.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder19\Folder19.6\file34.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder13\Folder13.1\file35.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder11\Folder11.2\file36.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder17\Folder17.10\file37.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder5\Folder5.9\file38.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder6\Folder6.2\file39.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder13\Folder13.2\file40.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder1\Folder1.4\file41.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder14\Folder14.8\file42.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder2\Folder2.8\file43.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder2\Folder2.4\file44.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder17\Folder17.3\file45.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder3\Folder3.5\file46.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder9\Folder9.6\file47.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder9\Folder9.2\file48.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder3\Folder3.6\file49.txt
+Создан C:\Users\codeinveins\Desktop\Java\Folder\Folder1\Folder1.6\file50.txt
+PS C:\Users\codeinveins\Desktop\Java\Folder>
