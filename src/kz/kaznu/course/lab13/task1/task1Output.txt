@@ -1,0 +1,40 @@
+===== Обработка данных студентов =====
+1. Студенты с GPA > 3.5
+Dmitry     | age:23 | course: 2 | gpa:3,79
+Michael    | age:22 | course: 4 | gpa:3,91
+
+2. Студенты отсортированные по имени
+Abraam     | age:21 | course: 1 | gpa:2,48
+Daniil     | age:21 | course: 1 | gpa:0,47
+Daniil     | age:19 | course: 3 | gpa:1,87
+Daniil     | age:24 | course: 5 | gpa:1,66
+Daria      | age:23 | course: 2 | gpa:0,35
+Dmitry     | age:23 | course: 2 | gpa:3,79
+Michael    | age:22 | course: 4 | gpa:3,91
+Olga       | age:19 | course: 1 | gpa:1,31
+Sergey     | age:19 | course: 1 | gpa:0,44
+Tatyana    | age:24 | course: 5 | gpa:0,86
+
+3. Имена студентов 3-ого курса
+Daniil     | age:19 | course: 3 | gpa:1,87
+Vladimir   | age:18 | course: 3 | gpa:1,03
+
+4. Средний GPA всех студентов
+Средний GPA: 1.6116804430472695
+
+5. Студент с максимальным GPA
+Michael    | age:22 | course: 4 | gpa:3,91
+
+6. Студенты по курсам
+Курс 1: 4 студентов
+Курс 2: 4 студентов
+Курс 3: 2 студентов
+Курс 4: 3 студентов
+Курс 5: 3 студентов
+
+7. Количество студентов на каждом курсе
+Курс 1: 4 студентов
+Курс 2: 4 студентов
+Курс 3: 2 студентов
+Курс 4: 3 студентов
+Курс 5: 3 студентов
