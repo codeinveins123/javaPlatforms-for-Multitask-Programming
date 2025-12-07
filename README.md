@@ -12,6 +12,7 @@
 - [Отчёт по лабораторной работе #11 (reportLab11.md)](reportLab11.md)
 - [Отчёт по лабораторной работе #12 (reportLab12.md)](reportLab12.md)
 - [Отчёт по лабораторной работе #13 (reportLab13.md)](reportLab13.md)
+- [Отчёт по лабораторной работе #14 (reportLab14.md)](reportLab14.md)
 
 ## Требования
 - Java 8+ (наличие `javac` и `java` в PATH)
