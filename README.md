@@ -13,6 +13,7 @@
 - [Отчёт по лабораторной работе #12 (reportLab12.md)](reportLab12.md)
 - [Отчёт по лабораторной работе #13 (reportLab13.md)](reportLab13.md)
 - [Отчёт по лабораторной работе #14 (reportLab14.md)](reportLab14.md)
+- [Отчёт по лабораторной работе #15 (reportLab15.md)](reportLab15.md)
 - [Отчёт по самостоятельной работе #2 (iws2report.md)](iws2report.md)
 
 ## Требования
